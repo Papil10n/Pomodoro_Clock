@@ -1,0 +1,169 @@
+body {
+   margin: 0px;
+   padding: 0px;
+   color: white;
+   font-size: 20px;
+}
+
+#bg-wrapper {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   object-fit: cover;
+   object-position: center;
+   z-index: -1;
+}
+#bg-image {
+   transition: all 375ms ease-in-out;
+   object-fit: cover;
+   object-position: center;
+}
+img {
+   vertical-align: middle;
+}
+.pomodoro {
+
+}
+.pomodoro__top {
+   margin-bottom: 100px;
+}
+.pomodoro__top__left {
+   margin-left: 30px;
+   line-height: 0.2;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   letter-spacing: 0.4px;
+}
+.pomodoro__logo {
+}
+.pomodoro__sublogo {
+   font-size: 20px;
+   opacity: 0.7;
+   margin-left: 40px;
+}
+.pomodoro__top-btn {
+   margin-bottom: 20px;
+   & button {
+      padding: 5px 20px;
+      font-size: 25px;
+      background: none;
+      border: 2px solid white;
+      color: white;
+      border-radius: 10px;
+      margin-inline: 10px;
+      transition: all 0.2s ease 0s;
+
+   }
+}
+.pomodoro__midle {
+   text-align: center;
+   max-width: 700px;
+   margin: 0 auto;
+   @media (min-width: 640px) {
+      button {
+         font-size: 40px;
+      }
+      span {
+         font-size: 120px;
+      }
+      .startBtn, .refreshBtn, .pauseBtn {
+         font-size: 40px;
+      }
+   }
+}
+.pomodoro__pomodoro {
+   display: inline-block;
+}
+.pomodoroBtn {
+}
+.pomodoro__break {
+   display: inline-block;
+}
+.breakBtn {
+}
+.pomodoro__main__time {
+   margin-bottom: 20px;
+}
+.pomodoro__time {
+   font-size: 80px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   letter-spacing: 0.7px;
+}
+.time {
+}
+.minutes {
+}
+.seconds {
+}
+.pomodoro__bottom-btn {
+   margin-bottom: 20px;
+   & button {
+      padding: 5px 20px;
+      font-size: 25px;
+      background: none;
+      border: 2px solid white;
+      color: white;
+      border-radius: 10px;
+      margin-inline: 10px;
+      transition: all 0.2s ease 0s;
+
+   }
+}
+.pomodoro__start {
+   display: inline-block;
+}
+.startBtn {
+   &:active {
+      background-color: white;
+      color: black;
+   }
+}
+.pomodoro__pause {
+   display: inline-block;
+}
+.pomodoro__refresh {
+   display: inline-block;
+}
+.refreshBtn {
+   width: 70px;
+   & img {
+      color: white;
+      width: 90%;
+      @media (min-width: 640px) {
+         position: relative;
+         left: -4px;
+         top: -1px;
+         width: 130%;
+      }
+   }
+
+}
+.rotate {
+   animation: move 1s infinite linear;
+}
+
+@keyframes move {
+   0% {
+     transform: rotate(0deg);
+   }
+   50% {
+     transform: rotate(180deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+.hide {
+   display: none !important;
+}
+ .active {
+   background-color: white !important;
+   color: black !important;
+ }
+
+ audio {
+   position: absolute;
+   top: -100%;
+ }

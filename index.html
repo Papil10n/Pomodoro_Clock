@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pomodoro Clock</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="bg-wrapper">
+      <img id="bg-image" data-src="images/cafe.jpg" width="100%" height="100%" src="https://studywithme.io/aesthetic-pomodoro-timer/8c50f8e334f43eee3272.jpg" style="display: block;">
+   </div>
+   <div class="pomodoro">
+      <div class="pomodoro__top">
+         <div class="pomodoro__top__left">
+            <p class="pomodoro__logo">Pomodoro Clock</p>
+            <p class="pomodoro__sublogo">by Papillon</p>
+         </div>
+      </div>
+      <div class="pomodoro__top-btn">
+         <div class="pomodoro__midle">
+            <div class="pomodoro__pomodoro">
+               <button disabled class="pomodoroBtn active">pomodoro</button>
+            </div>
+            <div class="pomodoro__break">
+               <button disabled class="breakBtn">break</button>
+            </div>
+         </div>
+      </div>
+      <div class="pomodoro__main__time">
+         <div class="pomodoro__midle">
+            <div class="pomodoro__time">
+               <span class="time minutes">25</span>
+               <span class="time">:</span>
+               <span class="time seconds">00</span>
+            </div>
+         </div>
+      </div>
+      <div class="pomodoro__bottom-btn">
+         <div class="pomodoro__midle">
+            <div class="pomodoro__start">
+               <button class="startBtn">start</button>
+            </div>
+            <div class="pomodoro__pause">
+               <button class="pauseBtn hide">pause</button>
+            </div>
+            <div class="pomodoro__refresh">
+               <button class="refreshBtn">
+                  <img src="reload.png" class="reload" alt="#">
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <audio class="audio" controls src="htcremi_dec5e42d5412501.mp3"></audio>
+   <script src="script.js"></script>
+</body>
+</html>
