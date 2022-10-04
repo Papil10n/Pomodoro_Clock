@@ -3,6 +3,7 @@ body {
   padding: 0px;
   color: white;
   font-size: 20px;
+  overflow: hidden;
 }
 
 #bg-wrapper {
@@ -193,3 +194,26 @@ audio {
   position: absolute;
   top: -100%;
 }
+.video {
+  padding-top: 50px;
+  text-align: center;
+}
+.vFrame {
+  width: 186px;
+  height: 104px;
+
+}
+@media (min-width: 1050px) {
+  .video {
+    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+  }
+  .vFrame {
+    width: 372px;
+    height: 208px;
+  }
+}
+
