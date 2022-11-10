@@ -7,7 +7,7 @@ const breakMode = document.querySelector(".breakBtn");
 
 let minutes = document.querySelector(".minutes");
 let seconds = document.querySelector(".seconds");
-const sound = document.querySelector(".audio")
+const sound = document.querySelector(".audio");
 
 
 
@@ -22,7 +22,7 @@ startBtn.addEventListener("click", (event) => {
    })
 
    refreshBtn.addEventListener("click", (event) => {
-      let load = setTimeout(function() {
+      let load = setTimeout(function () {
          clearInterval(workTime);
          startBtn.classList.remove("hide");
          pauseBtn.classList.add("hide");
@@ -48,7 +48,7 @@ startBtn.addEventListener("click", (event) => {
             sec = 59;
             min--;
          }
-   
+
          min > 9 ? minutes.innerHTML = min : minutes.innerHTML = "0" + min;
          sec > 9 ? seconds.innerHTML = sec : seconds.innerHTML = "0" + sec;
          document.title = min + ":" + sec;
@@ -67,7 +67,7 @@ startBtn.addEventListener("click", (event) => {
             minutes.innerHTML = "05";
             seconds.innerHTML = "00";
          }
-         
+
          startBtn.classList.remove("hide");
          pauseBtn.classList.add("hide");
       }
@@ -78,9 +78,9 @@ startBtn.addEventListener("click", (event) => {
 
 refreshBtn.addEventListener(("click"), (event) => {
    refreshImg.classList.add("rotate");
-   setTimeout(function(){
+   setTimeout(function () {
       refreshImg.classList.remove("rotate");
-      
+
    }, 1000)
 })
 
